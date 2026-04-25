@@ -81,3 +81,6 @@ htmlcov/
 
 # Memory2 autorecord
 recording*.db
+
+# Local trajectory tick plot outputs (scripts/plot_trajectory_control_ticks.py)
+*_921_plot.png
