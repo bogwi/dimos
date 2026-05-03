@@ -42,7 +42,7 @@ jobs:
         run: |
           find .venv/lib/*/site-packages/pydrake -name '*.pyi' -delete 2>/dev/null || true
 
-      # 921 P5-5: plant-backed holonomic calibration + in-tree odom replay mini (no LFS).
+      # 921 P5-5: plant-backed holonomic calibration + go2_bigoffice memory2 odom replay (skipped without data/go2_bigoffice.db).
       # Fail fast before the full suite; see docs/development/large_file_management.md.
       - name: Trajectory calibration smoke (921)
         run: |
